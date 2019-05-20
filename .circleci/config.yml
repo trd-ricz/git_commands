@@ -21,4 +21,17 @@ jobs:
     steps:
       - checkout
 
-      - run: echo "test"
+      - run: 
+          name: install urllib3
+          command: bash ./ci/deploy-${CIRCLE_BRANCH}.sh
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - deploy:
+          context: sample-ci
+          filters:
+            branches:
+              only:
+                - development
