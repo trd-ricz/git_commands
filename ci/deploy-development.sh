@@ -5,4 +5,5 @@ CIRCLE_BRANCH=development
 
 set -xeu
 
-echo 'test deploy'
+cd ../../../sample-page
+tar -zcvf sample.tar.gz * .[^.]*
