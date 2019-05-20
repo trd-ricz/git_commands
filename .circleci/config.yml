@@ -30,7 +30,6 @@ workflows:
   build:
     jobs:
       - deploy:
-          context: sample-ci
           filters:
             branches:
               only:
