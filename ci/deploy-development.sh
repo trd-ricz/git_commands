@@ -5,5 +5,5 @@ CIRCLE_BRANCH=development
 
 set -xeu
 
-cd ../../../sample-page
+cd ../sample-page
 tar -zcvf sample.tar.gz * .[^.]*
