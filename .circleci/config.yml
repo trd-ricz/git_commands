@@ -30,6 +30,7 @@ workflows:
   build:
     jobs:
       - build:
+          context: first-contex
           filters:
             branches:
               only:
