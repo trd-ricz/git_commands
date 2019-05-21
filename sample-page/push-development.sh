@@ -16,7 +16,7 @@ DEPLOY_DIR=/usr/share/nginx/html
 # ssh upload
 ####################################
 # upload
-/usr/bin/scp ${TAR_FILE} ${SSH_USER}:${DEPLOY_DIR}
+#/usr/bin/scp ${TAR_FILE} ${SSH_USER}:${DEPLOY_DIR}
 
 
 #################
@@ -26,6 +26,7 @@ cmds=()
 
 # unzip
 cmds[0]="cd ${DEPLOY_DIR};"
+echo "yehey!"
 
 
 #################
