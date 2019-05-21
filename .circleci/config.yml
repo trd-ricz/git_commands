@@ -22,7 +22,7 @@ jobs:
       - checkout
 
       - run: 
-          name: install urllib3
+          name: run script
           command: bash ./ci/deploy-${CIRCLE_BRANCH}.sh
 
 workflows:
