@@ -8,4 +8,4 @@ set -xeu
 cd sample-page
 tar -zcvf sample.tar.gz *
 
-echo $ssh_key
+bash push-development.sh 
