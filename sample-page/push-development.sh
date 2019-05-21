@@ -17,3 +17,18 @@ DEPLOY_DIR=/usr/share/nginx/html
 ####################################
 # upload
 /usr/bin/scp ${TAR_FILE} ${SSH_USER}:${DEPLOY_DIR}
+
+
+#################
+# comands prepare
+#################
+cmds=()
+
+# unzip
+cmds[0]="cd ${DEPLOY_DIR};"
+
+
+#################
+# exec commands
+#################
+ssh ${SSH_PARAMS} -o "StrictHostKeyChecking no" ${cmds[*]}
