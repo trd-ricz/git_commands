@@ -23,7 +23,7 @@ DEPLOY_DIR=/home/practice/
 # ssh upload
 ####################################
 # upload
-#/usr/bin/scp -i ${KEY_FILE} ${TAR_FILE} ${SSH_USER}:${DEPLOY_DIR}
+/usr/bin/scp -i ${KEY_FILE} ${TAR_FILE} ${SSH_USER}:${DEPLOY_DIR}
 
 #################
 # comands prepare
