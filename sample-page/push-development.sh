@@ -4,13 +4,20 @@
 #  !!!!! need run in your local. not workspace on docker
 #
 
+#path to key file
+if [ -z $1 ]; then
+  SSH_KEY=
+else
+  SSH_KEY="-i $1"
+fi
 
-SSH_USER=root@108.160.134.120
+
+SSH_USER=practice@45.76.55.233
 
 TAR_FILE=sample.tar.gz
 SSH_PARAMS="${KEY_FILE} ${SSH_USER}"
 DATE=`date +%Y%m%d_%H-%M-%S`
-DEPLOY_DIR=/usr/share/nginx/html
+DEPLOY_DIR=/home/practice/
 
 ####################################
 # ssh upload
