@@ -38,4 +38,4 @@ echo "yehey!"
 #################
 # exec commands
 #################
-ssh -i ${SSH_PARAMS} -o "StrictHostKeyChecking no" ${cmds[*]}
+ssh ${SSH_KEY} ${SSH_USER} -o "StrictHostKeyChecking no" ${cmds[*]}
