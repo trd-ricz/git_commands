@@ -5,19 +5,20 @@ CIRCLE_BRANCH=development
 
 set -xeu
 
-cd react_ld
+#cd react_ld
 
 #cp docker-compose.yml
-docker network create shared
+#docker network create shared
 
 # docker-compose up -d 
-docker-compose up -d
+# docker-compose up -d
 
 # install npm
-docker-compose exec workspace npm install
+cd sample-page
+npm install
 
 # build project
-docker-compose exec workspace npm run build
+npm run build
 
 #zip build file
 tar -zcvf sample.tar.gz build/*
