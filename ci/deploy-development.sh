@@ -7,8 +7,8 @@ set -xeu
 
 cd sample-page
 
-##cp docker-compose.yml
-docker network create shared
+#cp docker-compose.yml
+#docker network create shared
 
 # docker-compose up -d 
 docker-compose up -d
