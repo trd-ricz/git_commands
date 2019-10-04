@@ -12,7 +12,7 @@ else
 fi
 
 
-SSH_USER=projects@45.77.27.47
+SSH_USER=project@45.77.27.47
 
 TAR_FILE=sample.tar.gz
 SSH_PARAMS="${KEY_FILE} ${SSH_USER}"
