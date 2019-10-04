@@ -17,7 +17,7 @@ SSH_USER=projects@45.77.27.47
 TAR_FILE=sample.tar.gz
 SSH_PARAMS="${KEY_FILE} ${SSH_USER}"
 DATE=`date +%Y%m%d_%H-%M-%S`
-DEPLOY_DIR=$HOME/projects/
+DEPLOY_DIR=/home/project/
 
 ####################################
 # ssh upload
