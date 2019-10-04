@@ -15,10 +15,13 @@ set -xeu
 
 # install npm
 cd sample-page
-yarn install
+
+rm package.json.lock
+
+npm install
 
 # build project
-yarn run build
+npm run build
 
 #zip build file
 tar -zcvf sample.tar.gz build/*
