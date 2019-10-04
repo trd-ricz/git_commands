@@ -28,14 +28,38 @@ DEPLOY_DIR=/home/project/
 #################
 # comands prepare
 #################
+#################
+# comands prepare
+#################
 cmds=()
 
+# change dir
+cmds+=("cd ${DEPLOY_DIR};")
+
 # unzip
-cmds[0]="cd ${DEPLOY_DIR};"
-echo "yehey!"
+cmds+=("echo unzip...;")
+cmds+=("sudo rm -rf tmp_html;")
+cmds+=("mkdir tmp_html;")
+cmds+=("tar -zxf ${TAR_FILE} -C tmp_html/;")
+
+## backup
+cmds+=("echo backup...;")
+cmds+=("sudo rm -rf backup_html_*;")
+cmds+=("cp -rp html/ backup_html_${DATE}/;")
+
+## deploy
+cmds+=("echo deploy...;")
+cmds+=("sudo rm -rf html/;")
+cmds+=("cp -rp tmp_html/ html/;")
+
+## remove no need files
+cmds+=("echo remove deploy files...;")
+cmds+=("rm ${TAR_FILE};")
+cmds+=("sudo rm -rf tmp_html/;")
+
 
 
 #################
 # exec commands
 #################
-ssh ${SSH_KEY} ${SSH_USER} -o "StrictHostKeyChecking no" ${cmds[*]}
+ssh ${SSH_KEY} ${SSH_USER} -o "StrictHostKeyChecking no" ${cmds[*]} 
