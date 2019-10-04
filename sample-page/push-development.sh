@@ -23,7 +23,7 @@ DEPLOY_DIR=/home/projects/
 # ssh upload
 ####################################
 # upload
-/usr/bin/scp ${SSH_KEY} ${TAR_FILE} ${SSH_USER}:${DEPLOY_DIR}
+/usr/bin/scp ${SSH_KEY} ${TAR_FILE} ${SSH_USER}:${DEPLOY_DIR} -o StrictHostKeyChecking=no
 
 #################
 # comands prepare
