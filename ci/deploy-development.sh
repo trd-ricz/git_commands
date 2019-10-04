@@ -5,7 +5,7 @@ CIRCLE_BRANCH=development
 
 set -xeu
 
-cd sample-page
+cd react_ld
 
 #cp docker-compose.yml
 #docker network create shared
