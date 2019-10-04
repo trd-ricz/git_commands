@@ -16,7 +16,7 @@ set -xeu
 # install npm
 cd sample-page
 
-rm package.json.lock
+rm package-lock.json
 
 npm install
 
