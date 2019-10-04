@@ -38,24 +38,24 @@ cmds+=("cd ${DEPLOY_DIR};")
 
 # unzip
 cmds+=("echo unzip...;")
-cmds+=("sudo rm -rf tmp_html;")
+cmds+=("rm -rf tmp_html;")
 cmds+=("mkdir tmp_html;")
 cmds+=("tar -zxf ${TAR_FILE} -C tmp_html/;")
 
 ## backup
 cmds+=("echo backup...;")
-cmds+=("sudo rm -rf backup_html_*;")
+cmds+=("rm -rf backup_html_*;")
 cmds+=("cp -rp html/ backup_html_${DATE}/;")
 
 ## deploy
 cmds+=("echo deploy...;")
-cmds+=("sudo rm -rf html/;")
+cmds+=("rm -rf html/;")
 cmds+=("cp -rp tmp_html/ html/;")
 
 ## remove no need files
 cmds+=("echo remove deploy files...;")
 cmds+=("rm ${TAR_FILE};")
-cmds+=("sudo rm -rf tmp_html/;")
+cmds+=("rm -rf tmp_html/;")
 
 
 
