@@ -16,8 +16,6 @@ set -xeu
 # install npm
 cd sample-page
 
-rm package-lock.json
-
 npm install
 
 # build project
