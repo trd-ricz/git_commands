@@ -10,10 +10,6 @@ jobs:
       - run:
             name: awsebcli
             command: pip install awsebcli
-      - run: curl -o- -L https://yarnpkg.com/install.sh | bash
-      - run:
-          name: Install Dependencies
-          command: yarn install --frozen-lockfile
       - run:
           name: Deploying laod
           command: bash ./ci/deploy-${CIRCLE_BRANCH}.sh
