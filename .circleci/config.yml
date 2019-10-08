@@ -10,6 +10,7 @@ jobs:
       - run:
             name: awsebcli
             command: pip install awsebcli
+      - run: sudo npm cache clean -f && sudo npm install -g n && sudo n stable && sudo n latest
       - run:
           name: Deploying laod
           command: bash ./ci/deploy-${CIRCLE_BRANCH}.sh
