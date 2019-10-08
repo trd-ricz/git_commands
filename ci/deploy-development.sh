@@ -16,11 +16,11 @@ set -xeu
 # install npm
 cd sample-page
 
-npm install
+yarn install
 
 
 # build project
-npm run build
+#npm run build
 
 #zip build file
 tar -zcvf sample.tar.gz build/*
