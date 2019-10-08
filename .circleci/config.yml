@@ -10,8 +10,6 @@ jobs:
       - run:
             name: awsebcli
             command: pip install awsebcli
-      - run: curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-      - run: sudo apt update && sudo apt install yarn
       - run:
           name: Deploying laod
           command: bash ./ci/deploy-${CIRCLE_BRANCH}.sh

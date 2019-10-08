@@ -16,6 +16,8 @@ set -xeu
 # install npm
 cd sample-page
 
+npm install -g yarnpkg
+
 yarn install
 
 # build project
