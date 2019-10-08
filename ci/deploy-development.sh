@@ -17,9 +17,9 @@ set -xeu
 cd sample-page
 
 
-sudo npm cache clean -f
-sudo npm install -g n
-sudo n stable
+npm cache clean -f
+npm install -g n
+n stable
 
 sudo n latest
 
