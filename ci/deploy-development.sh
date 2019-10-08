@@ -19,9 +19,9 @@ cd sample-page
 
 npm cache clean -f
 npm install -g n
-sudo n stable
+n stable
 
-sudo n latest
+n latest
 
 
 npm install -g yarnpkg
