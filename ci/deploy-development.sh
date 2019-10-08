@@ -19,6 +19,9 @@ cd sample-page
 
 npm cache clean -f
 npm install -g n
+
+whoami
+
 n stable
 
 n latest
