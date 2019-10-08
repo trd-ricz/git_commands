@@ -19,7 +19,7 @@ cd sample-page
 
 npm cache clean -f
 npm install -g n
-n stable
+sudo n stable
 
 sudo n latest
 
