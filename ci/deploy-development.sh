@@ -18,12 +18,8 @@ cd sample-page
 
 npm install
 
-npm install -g yarnpkg
-
-yarn install
-
 # build project
-yarn run build
+npm run build
 
 #zip build file
 tar -zcvf sample.tar.gz build/*
