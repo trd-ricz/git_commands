@@ -16,14 +16,18 @@ set -xeu
 # install npm
 cd sample-page
 
-curl -o- -L https://yarnpkg.com/install.sh | bash
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 
-yarn install
+apt-get install nodejs
+
+node --version
+
+#yarn install
 
 # build project
-yarn run build
+#yarn run build
 
 #zip build file
-tar -zcvf sample.tar.gz build/*
+#tar -zcvf sample.tar.gz build/*
 
-bash push-development.sh
+#bash push-development.sh
