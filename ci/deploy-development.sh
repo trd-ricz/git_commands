@@ -3,6 +3,9 @@
 
 CIRCLE_BRANCH=development
 
+
+echo $1
+
 set -xeu
 
 #cd react_ld
