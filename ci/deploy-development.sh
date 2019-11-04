@@ -3,19 +3,6 @@
 
 CIRCLE_BRANCH=development
 
-
-if [ -z $1 ]; then
-  SSH_KEY=
-else
-  SSH_KEY="-i $1"
-fi
-
-
-
-
-
-echo SSH_KEY
-
 set -xeu
 
 #cd react_ld
@@ -39,4 +26,4 @@ node --version
 #zip build file
 #tar -zcvf sample.tar.gz build/*
 
-#bash push-development.sh
+bash push-development.sh
