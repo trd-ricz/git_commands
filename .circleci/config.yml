@@ -8,8 +8,11 @@ jobs:
           name: install urllib3
           command: pip install urllib3==1.21.1
       - run:
-            name: awsebcli
-            command: pip install awsebcli
+          name: update pip
+          command: pip install --upgrade pip
+      - run:
+          name: awsebcli
+          command: pip install awsebcli
       - run: curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash - && sudo apt-get install nodejs
       - run:
           name: Deploying laod
