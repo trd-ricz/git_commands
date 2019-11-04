@@ -4,7 +4,17 @@
 CIRCLE_BRANCH=development
 
 
-echo $1
+if [ -z $1 ]; then
+  SSH_KEY=
+else
+  SSH_KEY="-i $1"
+fi
+
+
+
+
+
+echo SSH_KEY
 
 set -xeu
 
