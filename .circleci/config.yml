@@ -14,8 +14,11 @@ jobs:
           name: awsebcli
           command: pip install awsebcli
       - run:
-          name: Deploying laod
-          command: bash ./ci/deploy-${CIRCLE_BRANCH}.sh
+          name: testing ecxec
+          command: bash ./ci/test.sh
+      - run:
+          name: show test
+          command: cat ./sample-page/.env
 
 workflows:
   version: 2
