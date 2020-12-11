@@ -15,7 +15,7 @@ jobs:
           command: pip install awsebcli
       - run:
           name: testing ecxec
-          command: bash ./ci/test.sh $TEST
+          command: bash ./ci/test.sh
       - run:
           name: show test
           command: cat ./sample-page/.env;
