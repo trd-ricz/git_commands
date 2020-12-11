@@ -1,6 +1,5 @@
 #!/bin/bash
 
-SEARCH="REPLACETHISTEXT"
-REPLACE="Hello"
+CI_TEST=$TEST
 
-sed -e "s/$SEARCH/$REPLACE/" ./sample-page/.env;
+sed -i'.bak' "s/___TEST/${CI_TEST}/g" ./sample-page/.env;
