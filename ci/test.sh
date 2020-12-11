@@ -1,7 +1,7 @@
 #!/bin/bash
 
-CI_TEST=$TEST
+CI_TEST="${TEST:-}"
 
-echo "${TEST:-}"
+echo "${TEST}"
 
 sed -i'.bak' "s/${TEST}/${CI_TEST}/g" ./sample-page/.env;
