@@ -15,12 +15,10 @@ jobs:
           command: pip install awsebcli
       - run:
           name: testing ecxec
-          command: bash ./ci/test.sh
+          command: bash ./ci/test.sh $TEST
       - run:
           name: show test
-          command: |
-            sed -i'.bak' "s/${TEST}/${TEST}/g" ./sample-page/.env
-            sed -i'.bak' "s/${TEST2}/${TEST}/g" ./sample-page/.env
+          command: cat ./sample-page/.env;
             
 workflows:
   version: 2
