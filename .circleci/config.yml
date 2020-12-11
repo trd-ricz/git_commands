@@ -21,7 +21,7 @@ jobs:
           command: |
             sed -i'.bak' "s/${TEST}/${CI_TEST}/g" ./sample-page/.env
             sed -i'.bak' "s/${TEST2}/${CI_TEST}/g" ./sample-page/.env
-        	
+            
 workflows:
   version: 2
   build:
