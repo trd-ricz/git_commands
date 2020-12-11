@@ -14,6 +14,9 @@ jobs:
           name: awsebcli
           command: pip install awsebcli
       - run:
+      	  name: echo
+      	  command: echo $TEST
+      - run:
           name: testing ecxec
           command: bash ./ci/test.sh
       - run:
