@@ -62,12 +62,12 @@ replaceEnv () {
 runWithInstall () {
   if "${INSTALL}"; then
     rm -rf node_modules/
-    yarn install
+    npx cypress install
   fi
 }
 
 runTest () {
-  yarn test
+  npx cypress test
 }
 
 rollBackSettings () {
