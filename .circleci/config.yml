@@ -11,9 +11,6 @@ jobs:
           name: update pip
           command: pip install --upgrade pip
       - run:
-          name: awsebcli
-          command: pip install awsebcli
-      - run:
           name: cypress run
           command: bash .cypress/exec.sh -e local -i -a
       - run:
