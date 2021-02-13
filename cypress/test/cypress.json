@@ -1,0 +1,9 @@
+{
+  "integrationFolder": "./integration/local",
+  "chromeWebSecurity": false,
+  "env" : {
+    "host" : "http://eos_web.localhost/",
+    "username": "riczeil232k3@gmail.com",
+    "password": "@d-NQkHat!R:DH%00y)"
+  }
+}

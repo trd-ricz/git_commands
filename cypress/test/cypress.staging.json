@@ -1,0 +1,9 @@
+{
+  "integrationFolder": "./integration/staging",
+  "chromeWebSecurity": false,
+  "env" : {
+    "host" : "https://staging.axis-sacbms.com",
+    "username": "riczeil232k3@gmail.com",
+    "password": "@d-NQkHat!R:DH%00y)"
+  }
+}

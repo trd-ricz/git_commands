@@ -14,6 +14,9 @@ jobs:
           name: awsebcli
           command: pip install awsebcli
       - run:
+          name: cypress run
+          command: bash .cypress/exec.sh -e local -i -a
+      - run:
           name: testing ecxec
           command: bash ./ci/test.sh
       - run:

@@ -1,0 +1,9 @@
+{
+  "integrationFolder": "./integration/development",
+  "chromeWebSecurity": false,
+  "env" : {
+    "host" : "https://develop.axis-sacbms.com",
+    "username": "riczeil232k3@gmail.com",
+    "password": "@d-NQkHat!R:DH%00y)"
+  }
+}
