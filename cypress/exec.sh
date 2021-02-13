@@ -67,6 +67,9 @@ changeDir () {
 }
 
 runWithInstall () {
+  if "${CI}"; then
+    docker-compose up -d --build cypress
+  fi
   if "${INSTALL}"; then
     rm -rf node_modules/
     docker-compose exec -T cypress yarn install
@@ -80,7 +83,6 @@ replaceEnv () {
 
 execCypress () {
     if "${CI}"; then
-        docker-compose up -d --build cypress
         cd test/ && bash run.sh -e ${ENV}
     else
         ./node_modules/.bin/cypress open
