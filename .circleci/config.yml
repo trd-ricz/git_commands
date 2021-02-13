@@ -11,6 +11,9 @@ jobs:
           name: update pip
           command: pip install --upgrade pip
       - run:
+          name: up brdige shared
+          command: docker network create --driver bridge shared
+      - run:
           name: up docker
           command: cd react_ld && docker-compose up -d --build
       - run:
