@@ -12,7 +12,7 @@ jobs:
           command: pip install --upgrade pip
       - run:
           name: cypress run
-          command: bash .cypress/exec.sh -e local -i -a
+          command: bash ./cypress/exec.sh -e local -i -a
       - run:
           name: testing ecxec
           command: bash ./ci/test.sh
