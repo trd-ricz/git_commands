@@ -72,7 +72,7 @@ runWithInstall () {
   fi
   if "${INSTALL}"; then
     rm -rf node_modules/
-    docker-compose exec -T cypress yarn install
+    ./node_modules/.bin/cypress install
   fi
 }
 
