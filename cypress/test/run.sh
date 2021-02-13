@@ -62,7 +62,7 @@ replaceEnv () {
 runWithInstall () {
   if "${INSTALL}"; then
     rm -rf node_modules/
-    ./node_modules/.bin/cypress install
+    npm install
   fi
 }
 
