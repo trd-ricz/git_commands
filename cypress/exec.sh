@@ -83,7 +83,7 @@ replaceEnv () {
 
 execCypress () {
     if "${CI}"; then
-        cd test/ && bash run.sh -e ${ENV}
+        bash run.sh -e ${ENV}
     else
         ./node_modules/.bin/cypress open
     fi
