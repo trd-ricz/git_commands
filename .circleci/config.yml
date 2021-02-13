@@ -11,6 +11,9 @@ jobs:
           name: update pip
           command: pip install --upgrade pip
       - run:
+          name: up docker
+          command: cd react_ld && docker-compose up -d --build
+      - run:
           name: cypress run
           command: cd cypress && bash exec.sh -e local -i -a
       - run:

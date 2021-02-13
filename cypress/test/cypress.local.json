@@ -2,7 +2,7 @@
   "integrationFolder": "./integration/local",
   "chromeWebSecurity": false,
   "env" : {
-    "host" : "http://eos_web.localhost/",
+    "host" : "http://localhost:50271",
     "username": "riczeil232k3@gmail.com",
     "password": "@d-NQkHat!R:DH%00y)"
   }
